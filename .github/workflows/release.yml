@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - master
+    - sdaia-dev
 jobs:
   release:
     name: Release
