@@ -75,8 +75,10 @@
   },
   "release": {
     "branches": [
-      "master",
-      "sdaia-dev"
+      {
+        "name": "sdaia-dev",
+        "prerelease": false
+      }
     ]
   }
 }
