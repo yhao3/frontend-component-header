@@ -44,3 +44,79 @@ export const CaretIcon = (props) => (
     />
   </svg>
 );
+
+export const DashboardIcon = (props) => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    version="1.1"
+    {...props}
+  >
+    <path
+      d="M7 1V19M17 1H3C1.89543 1 1 1.89543 1 3V17C1 18.1046 1.89543 19 3 19H17C18.1046 19 19 18.1046 19 17V3C19 1.89543 18.1046 1 17 1Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const ProfileIcon = (props) => (
+  <svg
+    width="18"
+    height="20"
+    viewBox="0 0 18 20"
+    fill="none"
+    version="1.1"
+    {...props}
+  >
+    <path
+      d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const AccountIcon = (props) => (
+  <svg
+    width="24"
+    height="20"
+    viewBox="0 0 24 20"
+    fill="none"
+    version="1.1"
+    {...props}
+  >
+    <path
+      d="M4 19V12M4 8V1M12 19V10M12 6V1M20 19V14M20 10V1M1 12H7M9 6H15M17 14H23"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const LogoutIcon = (props) => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    version="1.1"
+    {...props}
+  >
+    <path
+      d="M7 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7M14 15L19 10M19 10L14 5M19 10H7"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
