@@ -74,6 +74,7 @@
     "react-dom": "^16.9.0 || ^17.0.0"
   },
   "release": {
+    "tagFormat": "indigo-${version}",
     "branches": [
       "quince/indigo"
     ]
