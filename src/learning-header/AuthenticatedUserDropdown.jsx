@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { getConfig } from '@edx/frontend-platform';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import { Dropdown } from '@edx/paragon';
+import { Dropdown, Image } from '@edx/paragon';
 
 import messages from './messages';
 
@@ -23,7 +23,11 @@ const AuthenticatedUserDropdown = ({ intl, username }) => {
           <span className="line" />
           <span className="line" />
         </div>
-        <span data-hj-suppress className="d-none d-md-inline">
+        <Image
+          src={`${getConfig().LMS_BASE_URL}/static/indigo/images/profile.svg`}
+          alt="Image description"
+        />
+        <span data-hj-suppress className="sr-only">
           {username}
         </span>
       </Dropdown.Toggle>
