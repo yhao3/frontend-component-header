@@ -102,10 +102,10 @@ const Header = ({ intl }) => {
 
   return (
     <>
-      <Responsive maxWidth={768}>
+      <Responsive maxWidth={991}>
         <MobileHeader {...props} />
       </Responsive>
-      <Responsive minWidth={769}>
+      <Responsive minWidth={992}>
         <DesktopHeader {...props} />
       </Responsive>
     </>
