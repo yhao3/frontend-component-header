@@ -39,15 +39,19 @@ const AuthenticatedUserDropdown = ({ intl, username, userProfileImage }) => {
         </Dropdown.Toggle>
         <Dropdown.Menu className="dropdown-menu-right">
           {dashboardMenuItem}
-          <Dropdown.Item href={`${getConfig().ACCOUNT_PROFILE_URL}/u/${username}`}>
-            <span className="drop-icon"><ProfileIcon className="text-primary" /></span>
-            {intl.formatMessage(messages.profile)}
-          </Dropdown.Item>
-          <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
-            <span className="drop-icon"><AccountIcon className="text-primary" /></span>
-            {intl.formatMessage(messages.account)}
-          </Dropdown.Item>
-          { getConfig().ORDER_HISTORY_URL && (
+          {getConfig().ENABLE_PROFILE_BUTTON && (
+            <Dropdown.Item href={`${getConfig().ACCOUNT_PROFILE_URL}/u/${username}`}>
+              <span className="drop-icon"><ProfileIcon className="text-primary" /></span>
+              {intl.formatMessage(messages.profile)}
+            </Dropdown.Item>
+          )}
+          {getConfig().ENABLE_ACCOUNT_BUTTON && (
+            <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
+              <span className="drop-icon"><AccountIcon className="text-primary" /></span>
+              {intl.formatMessage(messages.account)}
+            </Dropdown.Item>
+          )}
+          {getConfig().ORDER_HISTORY_URL && (
             <Dropdown.Item href={getConfig().ORDER_HISTORY_URL}>
               {intl.formatMessage(messages.orderHistory)}
             </Dropdown.Item>
