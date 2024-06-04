@@ -26,13 +26,11 @@ const AuthenticatedUserDropdown = ({ intl, username, userProfileImage }) => {
       <Dropdown className="user-dropdown ml-3">
         <Dropdown.Toggle variant="none" className="user-dropdown-toggle" id="userProfileDropDown">
           <FontAwesomeIcon icon={faUserCircle} className="d-none" size="lg" />
-          {
-            userProfileImage && (
-              <div className="user-profile mr-3">
-                <Image src={userProfileImage} fluid alt={username} />
-              </div>
-            )
-          }
+          {userProfileImage && (
+            <div className="user-profile mr-3">
+              <Image src={userProfileImage} fluid alt={username} />
+            </div>
+          )}
           <span data-hj-suppress className="d-none d-md-inline">
             {username}
           </span>
