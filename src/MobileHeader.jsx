@@ -5,7 +5,6 @@ import { getConfig } from '@edx/frontend-platform';
 
 // Local Components
 import { Menu, MenuTrigger, MenuContent } from './Menu';
-import Avatar from './Avatar';
 import { LinkedLogo, Logo } from './Logo';
 
 // i18n
@@ -87,8 +86,6 @@ class MobileHeader extends React.Component {
       logoAltText,
       logoDestination,
       loggedIn,
-      avatar,
-      username,
       stickyOnMobile,
       intl,
       mainMenu,
@@ -106,7 +103,7 @@ class MobileHeader extends React.Component {
       >
         <a className="nav-skip sr-only sr-only-focusable" href="#main">{intl.formatMessage(messages['header.label.skip.nav'])}</a>
         {mainMenu.length > 0 ? (
-          <div className="w-100 d-flex justify-content-start">
+          <div className="w-100 d-flex justify-content-start sr-only">
 
             <Menu className="position-static">
               <MenuTrigger
@@ -127,19 +124,23 @@ class MobileHeader extends React.Component {
             </Menu>
           </div>
         ) : null}
-        <div className={`w-100 d-flex ${logoClasses}`}>
+        <div className={`logo-holder ${logoClasses}`}>
           { logoDestination === null ? <Logo className="logo" src={logo} alt={logoAltText} /> : <LinkedLogo className="logo" {...logoProps} itemType="http://schema.org/Organization" />}
         </div>
         {userMenu.length > 0 || loggedOutItems.length > 0 ? (
-          <div className="w-100 d-flex justify-content-end align-items-center">
+          <div className="mobile-menu">
             <Menu tag="nav" aria-label={intl.formatMessage(messages['header.label.secondary.nav'])} className="position-static">
               <MenuTrigger
                 tag="button"
-                className="icon-button"
                 aria-label={intl.formatMessage(messages['header.label.account.menu'])}
                 title={intl.formatMessage(messages['header.label.account.menu'])}
               >
-                <Avatar size="1.5rem" src={avatar} alt={username} />
+                <div className="hamburger-menu">
+                  <span className="line" />
+                  <span className="line" />
+                  <span className="line" />
+                  <span className="line" />
+                </div>
               </MenuTrigger>
               <MenuContent tag="ul" className="nav flex-column pin-left pin-right border-top shadow py-2">
                 {loggedIn ? this.renderUserMenuItems() : this.renderLoggedOutItems()}
