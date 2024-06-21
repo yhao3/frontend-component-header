@@ -33,6 +33,7 @@ exports[`<Header /> renders correctly for anonymous desktop 1`] = `
         <a
           className="nav-link"
           href="http://localhost:18000/dashboard"
+          onClick={null}
         >
           Courses
         </a>
@@ -93,7 +94,7 @@ exports[`<Header /> renders correctly for anonymous mobile 1`] = `
           height="24px"
           role="img"
           style={
-            Object {
+            {
               "height": "1.5rem",
               "width": "1.5rem",
             }
@@ -215,6 +216,7 @@ exports[`<Header /> renders correctly for authenticated desktop 1`] = `
         <a
           className="nav-link"
           href="http://localhost:18000/dashboard"
+          onClick={null}
         >
           Courses
         </a>
@@ -239,7 +241,7 @@ exports[`<Header /> renders correctly for authenticated desktop 1`] = `
             <span
               className="avatar overflow-hidden d-inline-flex rounded-circle mr-2"
               style={
-                Object {
+                {
                   "height": "1.5em",
                   "width": "1.5em",
                 }
@@ -251,7 +253,7 @@ exports[`<Header /> renders correctly for authenticated desktop 1`] = `
                 height="24px"
                 role="img"
                 style={
-                  Object {
+                  {
                     "height": "1.5em",
                     "width": "1.5em",
                   }
@@ -325,7 +327,7 @@ exports[`<Header /> renders correctly for authenticated mobile 1`] = `
           height="24px"
           role="img"
           style={
-            Object {
+            {
               "height": "1.5rem",
               "width": "1.5rem",
             }
