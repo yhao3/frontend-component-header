@@ -43,6 +43,7 @@ const AuthenticatedUserDropdown = ({ intl, username, userProfileImage }) => {
               {intl.formatMessage(messages.profile)}
             </Dropdown.Item>
           )}
+          {/* add drupal's profile button */}
           {getConfig().ENABLE_DRUPAL_PROFILE_BUTTON && (
             <Dropdown.Item href={`${getConfig().DRUPAL_PROFILE_BUTTON_URL}`}>
               <span className="drop-icon"><ProfileIcon className="text-primary" /></span>
