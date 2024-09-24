@@ -51,12 +51,12 @@ const LearningHeader = ({
           </div>
           <div className="nav-course">
             <a href={`${getConfig().LMS_BASE_URL}/dashboard`}>
-              My Courses
+              我的課程
             </a>
           </div>
           <div className="nav-course">
             <a href={`${getConfig().LMS_BASE_URL}/courses`}>
-              Discover
+              探索新課程
             </a>
           </div>
         </div>

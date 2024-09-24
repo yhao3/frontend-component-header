@@ -28,8 +28,8 @@ const AuthenticatedUserDropdown = ({ intl, username }) => {
         </span>
       </Dropdown.Toggle>
       <Dropdown.Menu className="dropdown-menu-right">
-        <a href={`${getConfig().LMS_BASE_URL}/dashboard`} className="pgn__dropdown-item dropdown-item h-desktop">My Courses</a>
-        <a href={`${getConfig().LMS_BASE_URL}/courses`} className="pgn__dropdown-item dropdown-item h-desktop">Discover</a>
+        <a href={`${getConfig().LMS_BASE_URL}/dashboard`} className="pgn__dropdown-item dropdown-item h-desktop">我的課程</a>
+        <a href={`${getConfig().LMS_BASE_URL}/courses`} className="pgn__dropdown-item dropdown-item h-desktop">探索新課程</a>
         {dashboardMenuItem}
         <Dropdown.Item href={`${getConfig().ACCOUNT_PROFILE_URL}/u/${username}`}>
           {intl.formatMessage(messages.profile)}
